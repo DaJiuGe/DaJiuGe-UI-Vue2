@@ -2,10 +2,31 @@
 import { ref } from 'vue'
 
 const gender = ref('1')
+const check1 = ref(false)
+const check2 = ref(true)
+const checkArr = ref(['0', '1'])
 </script>
 
 <template>
   <div id="app">
+    <div class="row">
+      <SuCheckboxGroup v-model="checkArr">
+        <SuCheckbox v-model="check1" label="0">
+          男
+        </SuCheckbox>
+        <SuCheckbox v-model="check2" label="1">
+          女
+        </SuCheckbox>
+      </SuCheckboxGroup>
+    </div>
+    <div class="row">
+      <SuCheckbox v-model="check1" label="0">
+        男
+      </SuCheckbox>
+      <SuCheckbox v-model="check2" label="1">
+        女
+      </SuCheckbox>
+    </div>
     <div class="row">
       <SuRadio v-model="gender" label="0">
         男
