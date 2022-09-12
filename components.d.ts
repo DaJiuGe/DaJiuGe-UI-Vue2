@@ -8,5 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Button: typeof import('./src/components/button/index.vue')['default']
+    Group: typeof import('./src/components/radio/group.vue')['default']
+    Radio: typeof import('./src/components/radio/index.vue')['default']
   }
 }

@@ -4,6 +4,9 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
+  server: {
+    port: 3000,
+  },
   plugins: [
     vue(),
     Components({ /* options */ }),
